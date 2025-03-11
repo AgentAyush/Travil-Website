@@ -1,0 +1,7 @@
+[
+    { "name": "New York", "icon": "Assets/icons/map.svg" },
+    { "name": "Paris", "icon": "Assets/icons/map.svg" },
+    { "name": "Tokyo", "icon": "Assets/icons/map.svg" },
+    { "name": "London", "icon": "Assets/icons/map.svg" }
+  ]
+  

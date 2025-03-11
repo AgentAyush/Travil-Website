@@ -1,0 +1,77 @@
+[
+    {
+      "id": 1,
+      "image": "Assets/images/hotel1.jpg",
+      "badge": "Top Rated",
+      "name": "California Sunset/Twilight Boat Cruise with Drink",
+      "rating": 4.96,
+      "reviews": 672,
+      "stay": "2 days 3 nights",
+      "guests": "4-6 guests",
+      "price": 48.25,
+      "category": "Cruise"
+    },
+    {
+      "id": 2,
+      "image": "Assets/images/hotel2.jpg",
+      "badge": "Best Sale",
+      "name": "NYC: Food Tastings and Culture Tour of Little Italy",
+      "rating": 4.16,
+      "reviews": 672,
+      "stay": "3 days 3 nights",
+      "guests": "4-6 guests",
+      "price": 17.32,
+      "category": "Tour"
+    },
+    {
+      "id": 3,
+      "image": "Assets/images/hotel3.jpg",
+      "badge": "25% Off",
+      "name": "Grand Canyon Horseshoe Bend 2 days Adventure",
+      "rating": 4.96,
+      "reviews": 672,
+      "stay": "7 days 6 nights",
+      "guests": "4-6 guests",
+      "price": 15.63,
+      "category": "Adventure"
+    },
+    {
+      "id": 4,
+      "image": "Assets/images/hotel1.jpg",
+      "badge": "Limited Offer",
+      "name": "Miami Beach Resort Stay",
+      "rating": 4.70,
+      "reviews": 540,
+      "stay": "5 days 4 nights",
+      "guests": "2-4 guests",
+      "price": 30.50,
+      "category": "Resort"
+    },
+    {
+      "id": 5,
+      "image": "Assets/images/hotel1.jpg",
+      "badge": "Limited Offer",
+      "name": "Miami Beach Resort Stay",
+      "rating": 4.70,
+      "reviews": 540,
+      "stay": "5 days 4 nights",
+      "guests": "2-4 guests",
+      "price": 30.50,
+      "category": "Resort"
+    },
+    {
+      "id": 6,
+      "image": "Assets/images/hotel2.jpg",
+      "badge": "New Arrival",
+      "name": "Paris City Lights Evening Tour",
+      "rating": 4.85,
+      "reviews": 610,
+      "stay": "3 days 2 nights",
+      "guests": "2-6 guests",
+      "price": 22.15,
+      "category": "Tour"
+    }
+
+  
+  ]
+  

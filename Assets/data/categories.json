@@ -1,0 +1,15 @@
+[
+    { "id": 1, "title": "Mountain", "tours": 356, "activities": 248, "image": "Assets/images/categories/mountain.jpg" },
+    { "id": 2, "title": "Safari", "tours": 356, "activities": 248, "image": "Assets/images/categories/safari.jpg" },
+    { "id": 3, "title": "Desert", "tours": 356, "activities": 248, "image": "Assets/images/categories/desert.jpg" },
+    { "id": 4, "title": "Flower", "tours": 356, "activities": 248, "image": "Assets/images/categories/flower.jpg" },
+    { "id": 5, "title": "Beach", "tours": 356, "activities": 248, "image": "Assets/images/categories/beach.jpg" },
+    { "id": 6, "title": "Temples", "tours": 356, "activities": 248, "image": "Assets/images/categories/temples.jpg" },
+    { "id": 7, "title": "Yacht", "tours": 356, "activities": 248, "image": "Assets/images/categories/yatch.jpg" },
+    { "id": 8, "title": "Valley", "tours": 356, "activities": 248, "image": "Assets/images/categories/valley.jpg" },
+    { "id": 9, "title": "Forest", "tours": 356, "activities": 248, "image": "Assets/images/categories/forest.jpg" },
+    { "id": 10, "title": "City", "tours": 356, "activities": 248, "image": "Assets/images/categories/city.jpg" },
+    { "id": 11, "title": "Canyon", "tours": 356, "activities": 248, "image": "Assets/images/categories/canyon.jpg" },
+    { "id": 12, "title": "River", "tours": 356, "activities": 248, "image": "Assets/images/categories/river.jpg" }
+  ]
+  

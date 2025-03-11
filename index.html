@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travila - Travel Website</title>
+  <!-- Tailwind CSS CDN -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="Assets\icons\logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+
+</head>
+
+<body>
+  <!-- First Header Section -->
+  <header class="w-full h-[46px] bg-black flex items-center justify-center px-2">
+    <div class="flex items-center justify-center space-x-2 max-w-7xl w-full">
+      <!-- Icon -->
+      <img src="Assets/icons/thunder.svg" alt="Icon" class="h-4 w-4 flex-shrink-0">
+
+ 
+      <p class="text-white text-sm text-center truncate max-w-[60%] sm:max-w-[70%] xs:max-w-[80%]">
+        Unlock the Magic of Travel with Travila - Your Gateway to Extraordinary Experiences
+      </p>
+
+
+      <button class="flex items-center px-3 py-1 text-sm text-[#F09814] whitespace-nowrap">
+        Get This Now
+        <img src="Assets/icons/right_arrow.svg" alt="Arrow" class="h-3 w-3 ml-2">
+      </button>
+    </div>
+  </header>
+
+
+
+  <!-- Second Header Section -->
+  <header class="w-full h-[62px] bg-white flex items-center justify-between px-4 sticky top-0 z-50 shadow">
+    <div class="flex items-center">
+      <a href="#"><img src="Assets\icons\logo.png" alt="Website Logo" class="h-10 w-10"></a>
+      <a href="#"><img src="Assets\icons\logo_writing.svg" alt="Website Logo" class="h-5 w-16"></a>
+    </div>
+    <nav id = "navMenu" class="hidden md:static md:flex md:items-center md:space-x-7 lg:flex lg:space-x-7 text-black font-medium">
+      <div class="relative" data-menu="home">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Home</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-home"></div>
+      </div>
+
+      <!-- <div class="relative" data-menu="destinations">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Tours</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-destinations">
+        </div>
+      </div> -->
+
+      <div class="relative" data-menu="tours">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Tours</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-tours"></div>
+      </div>
+      <div class="relative" data-menu="destinations">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Destinations</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-destinations"></div>
+      </div>
+      <div class="relative" data-menu="activities">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Activities</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-activities"></div>
+      </div>
+      <div class="relative" data-menu="hotel">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Hotel</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-hotel"></div>
+      </div>
+
+      <div class="relative" data-menu="rental">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Rental</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-rental"></div>
+      </div>
+
+      <div class="relative" data-menu="tickets">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Tickets</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-tickets"></div>
+      </div>
+
+      <div class="relative" data-menu="pages">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Pages</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-50" id="dropdown-pages"></div>
+      </div>
+
+      <div class="relative" data-menu="blog">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>Blog</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-lg w-48 mt-2 rounded-md py-2 z-10" id="dropdown-blog"></div>
+      </div>
+
+      <div class="flex items-center space-x-1 cursor-pointer">
+        <span>Contact</span>
+      </div>
+    </nav>
+
+
+
+    <div class="flex items-center space-x-4 text-black font-normal">
+
+
+      <!-- Language -->
+
+      <div class="relative group" data-menu="en">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <img src="Assets\icons\lang.svg" alt="Language" class="h-4 w-4">
+          <span>EN</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white shadow-md w-48 mt-2 rounded-md py-2" id="dropdown-en"></div>
+      </div>
+      <!-- Currency -->
+      <div class="relative group" data-menu="usd">
+        <div class="flex items-center space-x-1 cursor-pointer">
+          <span>USD</span>
+          <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="h-3 w-3">
+        </div>
+        <div class="absolute hidden bg-white  shadow-md w-48 mt-2 rounded-md py-2" id="dropdown-usd"></div>
+
+      </div>
+      <button id="darkModeToggle">
+        <img src="Assets\icons\dark_mode.svg" alt="Dark Mode" class="h-12 w-16">
+      </button>
+      <button id="signupButton">
+        <img src="Assets\icons\signin.svg" alt="Sign In" class="h-12 w-22">
+      </button>
+      <button id="menuButton">
+        <img src="Assets\icons\menu.png" alt="Menu" class="h-10 w-10">
+      </button>
+      <button id="hamberg" class="block md:hidden">
+        <img src="Assets/icons/more.png" alt="Menu" class="h-8 w-8">
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Overlay (Covers the whole screen when menu opens) -->
+  <div id="overlay" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-20">
+  </div>
+
+
+  <div id="menuBox"
+    class="fixed top-16 right-4 w-64 bg-white rounded-lg shadow-lg p-4 hidden z-30 transform scale-95 opacity-0 transition-all duration-300 ease-out">
+
+  </div>
+
+
+
+
+  <div id="signupOverlay"
+    class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-20"></div>
+
+
+  <div id="signupPopup"
+    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 bg-white rounded-lg shadow-lg p-6 hidden z-30 scale-90 opacity-0 transition-all duration-300 ease-out">
+
+    <button id="closeSignupPopup"
+      class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-lg font-bold">✖</button>
+
+    
+    <h2 class="text-2xl font-semibold mb-4 text-center">Sign In</h2>
+
+    <form id="signupForm" class="space-y-4">
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email"
+          class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Enter your email">
+        <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Invalid email format.</p>
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password"
+          class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Enter your password">
+        <p id="passwordError" class="text-red-500 text-sm mt-1 hidden"></p>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-200">
+        Sign In
+      </button>
+    </form>
+  </div>
+
+  <!-- //SECTION 1 -->
+  <section id="hero-section" class="relative w-full h-[999px]  bg-white">
+    <!-- Background Image Container -->
+    <div id="hero-background"
+      class="w-full h-[769px] bg-center bg-no-repeat bg-contain transition-opacity duration-500">
+      <div class="relative z-10 flex justify-between items-center h-full px-16 ml-[250px]">
+        <!-- Text Block -->
+        <div id="hero-text"
+          class="text-black w-[986px] mt-[-100px] opacity-0 transform -translate-x-10 transition-all duration-700">
+          <button id="hero-button"
+            class="bg-[#FEFA17] w-[200px] h-[52px] text-black text-[16px] font-semibold px-5 py-2 rounded-full mb-4 opacity-0 transform -translate-x-10 transition-all duration-700 hover:translate-y-2">
+            Discover the World
+          </button>
+          <h1 class="font-bold text-[24px] sm:text[30px] md:text[45px] lg:text-[64px] leading-[76px]">
+            Unleash Your Wanderlust <br> Book Your Next Journey
+          </h1>
+          <p class="font-medium text-[24px] leading-[32px] mt-4">
+            Crafting Exceptional Journeys: Your Global Escape Planner. <br>
+            Unleash Your Wanderlust: Seamless Travel, Extraordinary Adventures
+          </p>
+          <div class="flex justify-center items-center space-x-4 mt-4">
+            <button id="prevButton"
+              class="flex justify-center items-center w-10 h-10 mt-52 ml-[-900px] rounded-full bg-[#E4E6E8]">
+              <img src="Assets\icons\left-arrow.svg" alt="Previous" class="w-4 h-4">
+            </button>
+            <button id="nextButton"
+              class="flex justify-center items-center w-10 h-10 mt-52 ml-[-900px] rounded-full bg-[#E4E6E8]">
+              <img src="Assets\icons\right-arrow.svg" alt="Next" class="w-4 h-4">
+            </button>
+          </div>
+        </div>
+
+
+
+        <!-- Thumbnails -->
+        <div class="space-y-4">
+          <div id="image-thumbnails" class="flex flex-col space-y-4 mr-[250px]"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <section
+      class="max-w-[1300px] h-[230px] rounded-[16px] border border-[#E4E6E8] mx-auto mt-[-100px] p-6 bg-white shadow-md">
+
+      <!-- Navigation Menu -->
+      <div class="flex justify-between items-center mb-4">
+        <!-- Navigation Menu -->
+        <div class="flex space-x-4">
+          <button
+            class="tab-button px-4 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-black hover:text-white transition"
+            data-category="tours">Tours</button>
+          <button
+            class="tab-button px-4 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-black hover:text-white transition"
+            data-category="hotels">Hotels</button>
+          <button
+            class="tab-button px-4 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-black hover:text-white transition"
+            data-category="tickets">Tickets</button>
+          <button
+            class="tab-button px-4 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-black hover:text-white transition"
+            data-category="rental">Rental</button>
+          <button
+            class="tab-button px-4 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-black hover:text-white transition"
+            data-category="activities">Activities</button>
+        </div>
+
+        <!-- Right-aligned text -->
+        <div class="flex items-center space-x-2">
+          <img src="Assets/icons/help.svg" alt="Help Icon" class="w-3 h-3">
+
+          <!-- Help Text -->
+          <span class="text-[#737373] text-sm">Need some help?</span>
+        </div>
+      </div>
+
+
+
+      <!-- Selection Options -->
+      <div class="flex justify-between items-center space-x-4 rounded-[16px] border border-[#E4E6E8] p-5">
+
+        <!-- Location Dropdown -->
+        <div class="relative w-1/4 z-30"> <!-- Added z-30 for stacking -->
+          <label for="locationDropdown" class="block text-sm font-medium text-[#737373]">Location</label>
+
+          <button id="selectedLocation"
+            class="w-full flex items-center justify-between mt-1 text-gray-800 bg-transparent focus:outline-none">
+            <div class="flex items-center space-x-2">
+              <img id="selectedIcon" src="" alt="Icon" class="w-5 h-5 hidden">
+              <span id="selectedName" class="text-black font-semibold">Select a location</span>
+            </div>
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+              </path>
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <ul id="locationList"
+            class="absolute w-full mt-2 hidden bg-white border border-gray-300 rounded-md shadow-lg z-40">
+            <!-- Locations populated dynamically -->
+          </ul>
+        </div>
+
+        <img src="Assets\icons\vertical-divider.svg" alt="Divider">
+
+
+
+        <!-- Check-in Date -->
+
+        <div class="relative w-1/4">
+          <label for="checkinInput" class="block text-sm font-medium text-[#737373]">Check-in</label>
+          <div class="relative">
+            <button type="button"
+              class="w-full flex items-center justify-between mt-1 text-gray-800 bg-transparent focus:outline-none pointer-events-none">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                  </path>
+                </svg>
+                <span id="checkinDateText" class="text-black font-semibold">Select date</span>
+              </div>
+              <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <input type="date" id="checkinInput" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+          </div>
+        </div>
+        <img src="Assets\icons\vertical-divider.svg" alt="Divider">
+
+        <!-- Check-out Date -->
+        <div class="relative w-1/4">
+          <label for="checkoutInput" class="block text-sm font-medium text-[#737373]">Check-out</label>
+          <div class="relative">
+            <button type="button"
+              class="w-full flex items-center justify-between mt-1 text-gray-800 bg-transparent focus:outline-none pointer-events-none">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                  </path>
+                </svg>
+                <span id="checkoutDateText" class="text-black font-semibold">Select date</span>
+              </div>
+              <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <input type="date" id="checkoutInput" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+          </div>
+        </div>
+
+
+        <img src="Assets\icons\vertical-divider.svg" alt="Divider">
+
+        <!-- Guests Dropdown -->
+        <div class="w-1/4">
+          <label for="guestsDropdown" class="block text-sm font-medium text-[#737373]">Guests</label>
+          <select id="guestsDropdown"
+            class=" text-black font-semibold mt-1 block w-full borderbg-transparent border-none shadow-none p-2 focus:ring-black focus:border-black">
+            <option value="1">1 Adult</option>
+            <option value="2">2 Adults</option>
+            <option value="3">3 Adults</option>
+            <option value="4">4 Adults</option>
+            <option value="child">Child</option>
+          </select>
+        </div>
+
+
+        <!-- Search Button -->
+        <button id="searchButton"
+          class="w-[150px] h-[58px] bg-black text-white rounded-[50px] text-lg font-semibold hover:bg-gray-800 transition">
+          Search
+        </button>
+
+      </div>
+
+    </section>
+
+  </section>
+
+
+
+  <!-- SECTION 2 -->
+
+  <section class="w-full h-auto bg-white">
+    <div class="max-w-[1248px] mx-auto py-12 px-4">
+
+
+      <div class="flex justify-between items-start">
+
+        <!-- Left Section: Heading & Subtext -->
+        <div>
+          <h2 class="font-bold text-[52px] leading-[76px] w-[600px]">
+            Our Featured Tours
+          </h2>
+          <p class="text-[#737373] font-medium text-base w-[457px] h-[32px]">
+            Favorite destinations based on customer reviews
+          </p>
+        </div>
+
+        <!-- Right Section: Filter Navigation -->
+        <div class="flex space-x-2 mt-16">
+          <button
+            class="filter-button relative flex items-center space-x-2 text-black font-normal rounded-full bg-[#E4E6E8] px-4 py-2">
+            <span>Categories</span>
+            <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="w-4 h-4">
+          </button>
+
+          <button
+            class="filter-button relative flex items-center space-x-2 text-black font-normal rounded-full bg-[#E4E6E8] px-4 py-2">
+            <span>Duration</span>
+            <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="w-4 h-4">
+          </button>
+
+          <button
+            class="filter-button relative flex items-center space-x-2 text-black font-normal rounded-full bg-[#E4E6E8] px-4 py-2">
+            <span>Review/Rating</span>
+            <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="w-4 h-4">
+          </button>
+
+          <button
+            class="filter-button relative flex items-center space-x-2 text-black font-normal rounded-full bg-[#E4E6E8] px-4 py-2">
+            <span>Price range</span>
+            <img src="Assets/icons/dropdown.svg" alt="Dropdown" class="w-4 h-4">
+          </button>
+        </div>
+
+
+      </div>
+
+      <!-- Cards Container -->
+      <div id="toursContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10"></div>
+  </section>
+
+
+
+
+
+
+
+  <!-- SECTION 3 TOP CATEGORIES -->
+
+  <section>
+
+
+    <div class="max-w-[1248px] mx-auto py-12 px-4">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-8">
+        <div>
+          <h2 class="text-[24px] md:text-[36px] lg:text-[52px] font-bold">Top Categories of Tours</h2>
+          <p class="text-[#737373] font-medium text-base">Favorite destinations based on customer reviews</p>
+        </div>
+        <button id="viewMoreBtn" class="rounded-full bg-black text-white py-3 px-6 text-sm hover:bg-gray-800 transition"
+          style="border-radius: 50px;">
+          View More
+        </button>
+      </div>
+
+      <!-- Categories Grid -->
+      <div id="categoriesGrid"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- SECTION 4 AD -->
+
+  <section class="w-full h-auto bg-white">
+    <div class="max-w-[1248px] mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- First Banner -->
+      <div class="relative w-full h-[305px] rounded-md">
+        <img src="Assets/images/banner1.jpg" alt="Banner 1" class="w-full h-full rounded-md object-cover" />
+        <h2 class="absolute top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2 
+                    text-[28px] md:text-[36px] font-bold text-black leading-10 !block">
+          Waking up<br> in a far<br> away place
+        </h2>
+        <button class="absolute !inline-flex bottom-5 left-10 bg-[#FEFA17] w-[150px] h-[52px] text-black text-[16px] 
+                       font-semibold px-5 py-2 rounded-full  items-center justify-center gap-2 
+                       hover:scale-110 transition-transform ease-in-out">
+          View More
+          <img src="Assets/icons/right-arrow.svg" alt="Next" class="w-4 h-4" />
+        </button>
+      </div>
+  
+      <!-- Second Banner -->
+      <div class="relative w-full h-[305px] rounded-md">
+        <img src="Assets/images/banner2.jpg" alt="Banner 2" class="w-full h-full rounded-md object-cover" />
+        <h2 class="absolute top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2 
+                    text-[28px] md:text-[36px] font-bold text-black leading-10 !block">
+          Big promotion<br> at the end of<br> the year
+        </h2>
+        <button class="absolute !inline-flex bottom-5 left-5 bg-[#FEFA17] w-[150px] h-[52px] text-black text-[16px] 
+                       font-semibold px-5 py-2 rounded-full items-center justify-center gap-2 
+                       hover:scale-110 transition-transform ease-in-out">
+          View More
+          <img src="Assets/icons/right-arrow.svg" alt="Next" class="w-4 h-4" />
+        </button>
+      </div>
+  
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+  <!-- SECTION 5 -->
+  <section class="bg-[#FFF0EC] w-full h-auto">
+    <div class="py-16 max-w-[1224px] mx-auto px-4">
+      <div class="w-full h-full bg-cover bg-center" style="background-image: url('Assets/images/section5-back.png');">
+
+<!-- grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 -->
+
+        <section class="relative bg-[#FFF0EC] w-full h-auto">
+          <div class="w-full h-full bg-cover bg-center"
+            style="background-image: url('Assets/images/section5-back.png');">
+            <div class="px-10 py-12">
+              <h2 class="text-[52px] font-bold mb-4">Top Rated Hotels</h2>
+              <p class="text-[#737373] font-medium text-base">Quality as judged by customers. Book at the ideal price!
+              </p>
+
+
+              <div class="relative w-full">
+
+                <div id="topRated" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-transform duration-500">
+                </div>
+
+                <div class="flex justify-center items-center space-x-4 mt-4">
+                  <button id="prev"
+                    class="flex justify-center items-center w-10 h-10 rounded-full bg-[#E4E6E8] opacity-50">
+                    <img src="Assets/icons/left-arrow.svg" alt="Previous" class="w-4 h-4" />
+                  </button>
+                  <button id="nex" class="flex justify-center items-center w-10 h-10 rounded-full bg-[#E4E6E8]">
+                    <img src="Assets/icons/right-arrow.svg" alt="Next" class="w-4 h-4" />
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- SECTION 6  -->
+
+  <section class="w-full h-auto"></section>
+  <div
+    class="py-16 max-w-[1224px] max-h-[600px] mx-auto px-4 bg-[#EFEFEB] flex justify-around items-center mt-12 rounded-[12px] gap-[30px]">
+    <!-- Text Content -->
+    <div class="flex-1 max-w-[50%]">
+      <span
+        class="inline-block bg-white text-black text-sm font-semibold px-4 py-2 rounded-full mb-5 hover:scale-105 duration-300 transition-transform ease-in-out cursor-pointer">
+        Easy payment
+      </span>
+      <h2 class="text-[28px] font-bold leading-[1.4] mb-4">
+        Luxury Travel Redefined:<br>Your Passport to Global<br> Glamour
+      </h2>
+      <p class="text-base text-gray-600 leading-[1.6]">
+        Discover how you can offset your adventure's <br>carbon emissions and support the sustainable <br>initiatives
+        practiced by our operators worldwide.
+      </p>
+    </div>
+
+    <!-- Images -->
+    <div class="flex flex-1 justify-end items-center gap-3">
+      <!-- Main Image -->
+      <div>
+        <img src="Assets/images/sec5-img1.jpg" alt="Main Travel"
+          class="w-[165px] h-[307px] object-cover rounded-[56px] ml-0 hover:scale-105 duration-300 transition-transform ease-in-out" />
+      </div>
+
+      <!-- Side Images -->
+      <div class="grid grid-cols-2 grid-rows-2 gap-3">
+        <img src="Assets/images/sec5-img2.jpg" alt="Travel 1"
+          class="mt-[100px] w-[166px] h-[261px] object-cover rounded-[56px] hover:scale-105 duration-300 transition-transform ease-in-out" />
+        <img src="Assets/images/sec5-img3.jpg" alt="Travel 2"
+          class="mt-[100px] w-[166px] h-[166px] object-cover rounded-[56px] hover:scale-105 duration-300 transition-transform ease-in-out" />
+        <img src="Assets/images/sec5-img4.jpg" alt="Travel 3"
+          class="w-[166px] h-[166px] object-cover rounded-[56px] hover:scale-105 duration-300 transition-transform ease-in-out" />
+        <img src="Assets/images/sec5-img5.jpg" alt="Travel 4"
+          class="mt-[-80px] w-[166px] h-[261px] object-cover rounded-[56px] hover:scale-105 duration-300 transition-transform ease-in-out" />
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- SECTION 7 WHY TRAVEL WITH US -->
+
+  <section class="w-full h-auto">
+    <div class="py-16 max-w-[1224px] mx-auto px-4">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-[52px] font-semibold text-gray-800">Why Travel With Us?</h2>
+        <p class="text-[20px] text-gray-500 mt-2">The best booking platform you can trust</p>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <!-- Card 1 -->
+        <div class="bg-[#E4F9F9] p-6 rounded-lg text-center">
+          <div class="flex items-center justify-center">
+            <img src="Assets/icons/shield.png" alt="Security" class="w-24 h-24">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-700">Security Assurance</h3>
+          <p class="text-sm text-gray-500 mt-2">Demonstrates commitment to user data security through encryption and
+            secure payment practices.</p>
+          <a href="#" class="text-black font-medium mt-4 inline-block">Learn More →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#FCF2FA] p-6 rounded-lg text-center">
+          <div class="flex items-center justify-center">
+            <img src="Assets/icons/assistant.png" alt="Privacy" class="w-24 h-24">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-700">Security Assurance</h3>
+          <p class="text-sm text-gray-500 mt-2">Demonstrates commitment to user data security through encryption and
+            secure payment practices.</p>
+          <a href="#" class="text-black font-medium mt-4 inline-block">Learn More →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#E3F0FF] p-6 rounded-lg text-center">
+          <div class="flex items-center justify-center">
+            <img src="Assets/icons/hand.png" alt="User Protection" class="w-24 h-24">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-700">Security Assurance</h3>
+          <p class="text-sm text-gray-500 mt-2">Demonstrates commitment to user data security through encryption and
+            secure payment practices.</p>
+          <a href="#" class="text-black font-medium mt-4 inline-block">Learn More →</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-[#F6F3FC] p-6 rounded-lg text-center">
+          <div class="flex items-center justify-center">
+            <img src="Assets/icons/security.png" alt="Payments" class="w-24 h-24">
+          </div>
+          <h3 class="text-lg font-semibold text-gray-700">Security Assurance</h3>
+          <p class="text-sm text-gray-500 mt-2">Demonstrates commitment to user data security through encryption and
+            secure payment practices.</p>
+          <a href="#" class="text-black font-medium mt-4 inline-block">Learn More →</a>
+        </div>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="flex flex-wrap justify-center items-center gap-14">
+        <img src="Assets/icons/paypal.png" alt="PayPal"
+          class="h-6 hover:scale-105 duration-300 transition-transform ease-in-out">
+        <img src="Assets/icons/stripe.png" alt="Stripe"
+          class="h-6 hover:scale-105 duration-300 transition-transform ease-in-out">
+        <img src="Assets/icons/payoneer.png" alt="Payoneer"
+          class="h-6 hover:scale-105 duration-300 transition-transform ease-in-out">
+        <img src="Assets/icons/visa.png" alt="Visa"
+          class="h-5 hover:scale-105 duration-300 transition-transform ease-in-out">
+        <img src="Assets/icons/cashapp.png" alt="Cash App"
+          class="h-6 hover:scale-105 duration-300 transition-transform ease-in-out">
+        <img src="Assets/icons/bitcoin.png" alt="Bitcoin"
+          class="h-5 hover:scale-105 duration-300 transition-transform ease-in-out">
+        <img src="Assets/icons/discover.png" alt="Discover"
+          class="h-5 hover:scale-105 duration-300 transition-transform ease-in-out">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SECTION 8 TESTIMONIALS -->
+
+  <section class="w-full h-auto bg-white" style="background-image: url('Assets/images/city-back.png');">
+
+    <div class="py-16 max-w-[1224px] mx-auto px-4">
+      <!-- Testimonials Button -->
+      <div class="flex items-center mb-4">
+
+        <button class="flex items-center ml-2 text-lg font-semibold text-black bg-[#FEFA17] px-3 py-1 rounded-full">
+          <div class="flex -space-x-4">
+            <img src="Assets/users/sara.png" class="w-8 h-8 rounded-full border-2 border-white" alt="user1">
+            <img src="Assets/users/atend.png" class="w-8 h-8 rounded-full border-2 border-white" alt="user2">
+            <img src="Assets/users/sara.png" class="w-8 h-8 rounded-full border-2 border-white" alt="user3">
+          </div>Testimonials
+        </button>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="text-3xl sm:text-4xl font-bold mb-10">Don’t take our word for it</h2>
+
+      <!-- Review Cards Container -->
+      <div id="testimonial-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- Navigation Arrows -->
+      <div class="flex justify-center items-center mt-8 gap-4">
+        <button id="prevBtn" class="w-10 h-10 flex items-center justify-center bg-[#E4E6E8] rounded-full">
+          <img src="Assets/icons/left-arrow.svg" alt="Left Arrow">
+        </button>
+        <button id="nextBtn" class="w-10 h-10 flex items-center justify-center bg-[#E4E6E8] rounded-full">
+          <img src="Assets/icons/right-arrow.svg" alt="Right Arrow">
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- SECTION 9 NEWS -->
+  <section class="w-full py-12">
+    <div class="py-16 max-w-[1224px] mx-auto px-4">
+      <div class="flex justify-between items-center mb-8">
+
+        <div>
+
+          <h2 class="text-3xl font-bold">News, Tips & Guides</h2>
+          <p class="text-gray-500">Favorite destinations based on customer reviews</p>
+
+        </div>
+        <button id="viewmore"
+          class="bg-black text-white px-6 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-800 transition">
+          <span>View More</span>
+          <img src="Assets/icons/right_arrow.svg" alt="Arrow" class="w-4 h-4">
+        </button>
+      </div>
+
+      <div id="newsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dynamic cards will be inserted here -->
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="bg-black text-white py-10 px-5 md:px-16">
+    <div class="py-16 max-w-[1224px] mx-auto px-4">
+      <!-- Heading & Subscription -->
+      <div class="flex items-center justify-between text-start mb-8">
+        <h2 class="text-3 md:text-3xl font-semibold">
+          Subscribe to see secret deals prices<br> drop the moment you sign up!
+        </h2>
+        <div class="mt-4 flex justify-center items-center gap-3">
+          <div class="flex flex-col">
+            <input type="email" id="emailIn" placeholder="Enter your email"
+              class="px-4 py-2 w-72 md:w-96 rounded-full bg-transparent text-[#737373] border-[1px] placeholder-[#737373] border-[#737373] focus:ring-2 focus:ring-white"
+              required>
+            <p id="emailErr" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
+          </div>
+
+          <button
+            class="bg-[#FEFA17] text-black px-6 py-2 rounded-full font-semibold hover:scale-110 transition-transform ease-in-out duration-300">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+      <hr class="border-slate-800 my-6">
+
+      <!-- Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-8">
+
+        <!-- Logo & Address -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="Assets\icons\logo.png" alt="Travila Logo" class="w-10 h-10">
+            <span class="text-xl font-semibold">Travila</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img class="w-4 h-4" src="Assets/icons/map2.svg" alt="Map">
+            <p class="text-[#8E8E8E] mt-2">4517 Washington Ave, Manchester,<br> Kentucky 39495</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img class="w-4 h-4" src="Assets/icons/footer-clock.svg" alt="⏰">
+            <p class="text-[#8E8E8E] text-[16px]">Hours: 8:00 - 17:00, Mon - Sat</p>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <img class="w-4 h-4" src="Assets/icons/mail.svg" alt="📧">
+            <p class="text-[#8E8E8E] text-[16px]">support@travila.com</p>
+          </div>
+
+          <!-- <div class="space-x-2"> -->
+          <p class="mt-2 flex items-center gap-2">
+          <div class="flex items-center space-x-2">
+            <img class="w-4 h-4" src="Assets/icons/call.svg" alt="⏰">
+            <div class="text-white">Need help? Call us</div>
+          </div>
+
+          <div class="text-[#F09814] font-bold text-2xl">1-800-222-8888</div>
+          </p>
+
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="text-lg font-semibold">Support</h3>
+          <ul class="text-[#8E8E8E] mt-3 space-y-4">
+            <li><a href="#" class="hover:text-white">Forum support</a></li>
+            <li><a href="#" class="hover:text-white">Help Center</a></li>
+            <li><a href="#" class="hover:text-white">Live chat</a></li>
+            <li><a href="#" class="hover:text-white">How it works</a></li>
+            <li><a href="#" class="hover:text-white">Security</a></li>
+            <li><a href="#" class="hover:text-white">Privacy</a></li>
+            <li><a href="#" class="hover:text-white">Charges logs</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="text-lg font-semibold">Company</h3>
+          <ul class="text-[#8E8E8E] mt-3 space-y-4">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Community Blog</a></li>
+            <li><a href="#" class="hover:text-white">Jobs and Careers</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white">Our Awards</a></li>
+            <li><a href="#" class="hover:text-white">Agencies</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="text-lg font-semibold">Services</h3>
+          <ul class="text-[#8E8E8E] mt-3 space-y-4">
+            <li><a href="#" class="hover:text-white">Tour Guide</a></li>
+            <li><a href="#" class="hover:text-white">Tour Booking</a></li>
+            <li><a href="#" class="hover:text-white">Hotel Booking</a></li>
+            <li><a href="#" class="hover:text-white">Ticket Booking</a></li>
+            <li><a href="#" class="hover:text-white">Rental Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h3 class="text-lg font-semibold">Legal</h3>
+          <ul class="text-[#8E8E8E] mt-3 space-y-4">
+            <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white">Cookies Policy</a></li>
+            <li><a href="#" class="hover:text-white">Data Processing</a></li>
+            <li><a href="#" class="hover:text-white">Data Policy</a></li>
+            <li><a href="#" class="hover:text-white">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-slate-800 my-6">
+
+      <!-- Bottom Section -->
+      <div class="flex flex-col md:flex-row justify-between text-gray-400 text-sm">
+        <p>© 2024 Travila Inc. All rights reserved.</p>
+        <p class="font-semibold text-white">Follow us</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- AI BUDDY -->
+  <button id="aiBuddyBtn"
+    class="fixed bottom-4 right-4 bg-black text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform duration-10 ease-in-out">AI
+    Buddy</button>
+
+  <!-- Chat Popup (Initially Hidden) -->
+  <div id="chatPopup"
+    class="fixed bottom-0 right-0 w-3/12 h-[80vh] z-[9999] bg-white shadow-2xl  border border-gray-300 rounded-t-2xl hidden flex flex-col opacity-0 translate-y-10 transition-all duration-300">
+    <header class="p-4 border-b border-gray-300 rounded-t-2xl bg-black text-white flex justify-between items-center">
+      <h1 class="title text-lg">Hello, there</h1>
+      <button id="closeChat" class="text-white text-xl">&times;</button>
+    </header>
+
+    <p class="subtitle p-4">How can I help you today?</p>
+
+
+    <!-- Chat List / Messages -->
+    <div id="chatBox" class="chat-list p-4 flex-1 overflow-y-auto"></div>
+
+    <!-- Typing Area -->
+    <div class="typing-area p-4 border-t border-gray-300">
+      <form action="#" class="typing-form flex flex-col">
+        <div class="input-wrapper flex items-center space-x-2">
+          <input type="text" id="chatInput" placeholder="Enter a prompt here"
+            class="typing-input w-full border p-2 rounded-lg" required />
+          <button id="send-message-button"
+            class="icon material-symbols-rounded bg-black text-white p-2 rounded-lg">Send</button>
+        </div>
+        <div class="action-buttons flex justify-between mt-2">
+          <!-- <span id="theme-toggle-button" class="icon material-symbols-rounded cursor-pointer">light_mode</span> -->
+          <span id="delete-chat-button" class="icon material-symbols-rounded cursor-pointer text-red-500">Clear
+            Chat</span>
+        </div>
+      </form>
+      <p class="disclaimer-text text-xs text-gray-500 mt-2">
+        Buddy may display inaccurate info, including about people, so double-check its responses.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

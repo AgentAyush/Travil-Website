@@ -1,0 +1,17 @@
+{
+    "backgroundImages": [
+      {
+        "thumbnail": "Assets/images/image1.jpg",
+        "background": "Assets/images/image1.jpg"
+      },
+      {
+        "thumbnail": "Assets/images/image2.jpg",
+        "background": "Assets/images/image2.jpg"
+      },
+      {
+        "thumbnail": "Assets/images/image3.jpg",
+        "background": "Assets/images/image3.jpg"
+      }
+    ]
+  }
+  
